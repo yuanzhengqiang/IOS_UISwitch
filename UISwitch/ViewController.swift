@@ -19,6 +19,13 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBAction func switch1(_ sender: UISwitch) {
+        if (sender.isOn) {
+            NSLog("ON")
+        } else {
+            NSLog("OFF")
+        }
+    }
 
 
 }
