@@ -19,11 +19,15 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBOutlet weak var AIV1: UIActivityIndicatorView!
     @IBAction func switch1(_ sender: UISwitch) {
         if (sender.isOn) {
             self.view.backgroundColor = UIColor.white
+            AIV1.startAnimating()
         } else {
-            self.view.backgroundColor = UIColor.black
+            self.view.backgroundColor = UIColor.white
+            AIV1.stopAnimating()
         }
     }
 
