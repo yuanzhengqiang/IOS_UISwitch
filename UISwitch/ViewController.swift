@@ -21,9 +21,9 @@ class ViewController: UIViewController {
     }
     @IBAction func switch1(_ sender: UISwitch) {
         if (sender.isOn) {
-            NSLog("ON")
+            self.view.backgroundColor = UIColor.white
         } else {
-            NSLog("OFF")
+            self.view.backgroundColor = UIColor.black
         }
     }
 
